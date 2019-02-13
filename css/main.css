@@ -1,11 +1,12 @@
 body{
   font-family: 'Raleway', sans-serif;
+  height: 100%;
 }
 
-.wrapper {
+/* .wrapper {
   max-width: 800px;
   margin: auto;
-}
+} */
 /* GRID LAYOUT */
 
 .container {
@@ -21,9 +22,19 @@ body{
 
 
 /* HEADER */
+
+.header {
+  /* background: url('../img/omoss2.jpg'); */
+  padding-bottom: 5em;
+}
+
 h1 {
   text-align: center;
-  font-size: 3em;
+  font-size: 6em;
+}
+
+h1 span {
+  color: #890620;
 }
 
 .main-nav{
@@ -42,17 +53,17 @@ nav ul li {
   text-transform: uppercase;
   padding: 20px;
   margin-bottom: 20px;
-  border: 1px solid white;
   border-radius: 40px;
-  background-color: #E2E1E2;
 }
 
 nav ul li a {
-  color: #72727E;
+  font-weight: bold;
+  color: black;
 }
 
 nav ul li a:active{
-  color: black;
+  color: #890620;
+  font-size: 1.2em;
 }
 
 nav ul li:active {
@@ -61,19 +72,60 @@ nav ul li:active {
   background-color: #A9A7A9;
 }
 
+/* GALLERI */
+
+h2 {
+  font-size: 4em;
+  text-align: center;
+  color: #890620;
+}
+
+.card {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+	margin-right: auto;
+  width: 90%;
+  border: 1px solid grey;
+}
+
+/* OM OSS */
+#om-oss {
+  background-image: url('omoss.jpg');
+  border-top: 1px solid black;
+}
+
+.contact {
+  border-top: 1px solid black;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+}
 
 
+/* KONTAKT */
 
+.uppgifter a {
+  color: #890620;
+  font-size: 1.3em;
+}
 
+#toppen {
+  text-align: right;
+}
 
-
-
-
-
-
-
-
-
+.spanno span {
+  font-family: 'Felipa', cursive;
+  text-align: center;
+  font-size: 1em;
+}
 
 
 
