@@ -1,12 +1,19 @@
+/* KEYFRAMES */
+ @keyframes sonic {
+   100% {
+     stroke-dashoffset: 0;
+   }
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+
 body{
   font-family: 'Raleway', sans-serif;
   height: 100%;
 }
 
-/* .wrapper {
-  max-width: 800px;
-  margin: auto;
-} */
 /* GRID LAYOUT */
 
 .container {
@@ -26,7 +33,7 @@ body{
 
 .header {
   background: url('../img/OMOSS.jpg');
-  height: 1500px;
+  height: 1600px;
   background-color: #ffffff;
   opacity: 0.7;
 }
@@ -74,8 +81,10 @@ nav ul li a:active{
 nav ul li:active {
   transition: 1s;
   color: black;
-  background-color: #0B132B;
+  background-color: white;
+  opacity: 0.2;
 }
+
 
 /* GALLERI */
 
@@ -87,8 +96,9 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: bold;
+  text-align: center;
 }
 
 .card {
@@ -106,8 +116,6 @@ h3 {
 
 /* OM OSS */
 #om-oss {
-  /* background-image: url('../img/aboutus.jpg'); */
-  /* background-size: cover; */
   border-top: 1px solid black;
   background-color: #EDEFF1;
   opacity: 0.7;
@@ -123,6 +131,21 @@ p {
   color: black;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+svg {
+  display: block;
+  margin: 2em auto 0;
+  width: 30%;
+}
+
+.heart {
+  stroke: #0B132B;
+  stroke-width: 2;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+
+  animation: sonic 7s linear forwards;
 }
 
 
@@ -142,12 +165,27 @@ p {
   text-align: right;
 }
 
-.spanno span {
-  font-family: 'Felipa', cursive;
-  text-align: center;
+#top-bot {
   font-size: 1em;
+  font-weight: lighter;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 24px;
+  background-color: #0B132B;
+  color: white;
 }
 
+.spanno span {
+  font-family: 'Felipa', cursive;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#email {
+  padding-left: 20px;
+  font-weight: bold;
+}
 
 
 
