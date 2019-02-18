@@ -196,11 +196,51 @@ svg {
   font-weight: bold;
 }
 
-
-
-
-
-
 a:hover, a:visited, a:link, a:active {
   text-decoration: none;
+}
+
+
+
+/* MEDIA QUERIS */
+
+
+@media screen and (min-width: 1024px) {
+
+  .image-hero {
+    display: block;
+  }
+  .container {
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "header header header"
+      "hero hero hero"
+      "galleri galleri galleri"
+      "omoss omoss omoss"
+      "footer footer footer";
+
+  }
+
+  #main-header {
+    grid-area: header;
+
+  }
+
+  #hero {
+    grid-area: hero;
+  }
+
+  #galleri {
+    grid-area: galleri;
+  }
+
+  #om-oss {
+    grid-area: omoss;
+  }
+
+  footer {
+    grid-area: footer;
+  }
 }
