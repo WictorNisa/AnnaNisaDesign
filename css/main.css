@@ -286,6 +286,13 @@ a:hover, a:visited, a:link, a:active {
 
 
 /* HEADER */
+
+#start {
+  background-color: white;
+  z-index: 5;
+  opacity: .9;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -423,6 +430,7 @@ h2 {
   text-align: center;
   padding: 40px;
   background: url('../img/overlay.jpg') no-repeat;
+  /* Photo by samsommer on Unsplash */
   background-size: cover;
 }
 
@@ -441,6 +449,15 @@ h2 {
 
 
 
+/* KONTAKT */
+
+#toppen{
+  margin-bottom: 0;
+}
+
+#top-bot {
+  display: none;
+}
 
 
 
