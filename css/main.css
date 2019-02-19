@@ -98,6 +98,23 @@ nav ul li a:active{
 
 /* GALLERI */
 
+.gallery {
+  width: 98%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-auto-rows: repeat(2, 1fr);
+}
+
+.gallery-image{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+	margin-right: auto;
+}
+
 #titta {
   font-size: .8em;
   text-align: center;
@@ -331,21 +348,96 @@ nav ul li a:active{
 }
 
 .centered p {
+  font-family: 'Felipa', cursive;
   font-weight: lighter;
   font-size: 2.5em;
   color: white;
-  opacity: .8;
+  opacity: .7;
+  transition: 1.6s;
+}
+
+.centered p:hover {
+  transition: 1s;
+  font-size: 2.7em;
+}
+
+/* GALLERI */
+
+.gallery {
+  width: 97%;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 
+.gallery-image{
+  display: block;
+  margin-left: auto;
+	margin-right: auto;
+}
+
+.gallery-image:hover {
+  transition: .5s;
+  opacity: .8;
+}
+
+h3 {
+  display: none;
+}
 
 
+/* OM OSS SECTION  */
+
+.left-col {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1em;
+  grid-column: 1 / 1;
+  opacity: 1;
+  font-weight: lighter;
+}
+
+h2 {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  grid-column: 1 / 1;
+  grid-row: 1 / 2;
+}
 
 
+.full-overlay{
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  background: url('../img/overlay.jpg') no-repeat;
+  background-size: cover;
+}
 
-
-
-
+.full-overlay::after{
+    content: "";
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+	  right: 0;
+	  left: 0;
+	  bottom: 0;
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .15;
+}
 
 
 
