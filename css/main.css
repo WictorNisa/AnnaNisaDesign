@@ -398,6 +398,11 @@ h3 {
 
 
 /* OM OSS SECTION  */
+#om-oss{
+  opacity: 1;
+  border: none;
+}
+
 
 .left-col {
   display: grid;
@@ -443,8 +448,8 @@ h2 {
 	  right: 0;
 	  left: 0;
 	  bottom: 0;
-    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-    opacity: .15;
+    background-image: linear-gradient(to bottom right,#002f4b,#D8D8DB);
+    opacity: .1;
 }
 
 
@@ -459,12 +464,47 @@ h2 {
   display: none;
 }
 
+.contact h2 {
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+#kontakt {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  opacity: 1;
+  background-color: white;
+  background-image: url('../img/kontakt.jpg');
+  background-size: cover;
+}
 
 
+#kontakt p * {
+  color: #0B132B;
+}
 
+.contact {
+  border: none;
+  grid-column: 2 / 2;
+}
 
+.uppgifter {
+  text-align: center;
+  padding-top: .5em;
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
 
+#email {
+  padding-left: 0 ;
+  padding-bottom: 1em;
+  font-weight: lighter;
+}
 
+#adress p {
+  padding-top: 1em;
+}
 
 
 
