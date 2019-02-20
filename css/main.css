@@ -192,6 +192,11 @@ a:hover, a:visited, a:link, a:active {
 /* ============================== MEDIA QUERIS ============================== */
 
 
+
+
+
+
+
 /* DEKSTOP VIEW */
 
 @media screen and (min-width: 1024px) {
@@ -332,8 +337,10 @@ nav ul li a:active{
 /* GALLERI */
 
 .gallery {
+  max-width: 400px;
   width: 97%;
   margin: 0 auto;
+  justify-content: center;
   margin-bottom: 3em;
   display: grid;
   grid-gap: 25px;
