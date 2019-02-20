@@ -1,10 +1,3 @@
-/* KEYFRAMES */
- @keyframes sonic {
-   100% {
-     stroke-dashoffset: 0;
-   }
- }
-
  * {
    box-sizing: border-box;
  }
@@ -25,13 +18,6 @@ body{
   grid-template-columns: minmax(200px, 1fr);
   grid-auto-rows: auto;
   padding-bottom: 1em;
-}
-
-.container {
-  /* display: grid;
-  grid-template-columns: minmax(200px, 1fr);
-  grid-auto-rows: auto;
-  padding-bottom: 1em; */
 }
 
 .image-hero {
@@ -100,10 +86,14 @@ nav ul li a:active{
 
 .gallery {
   width: 98%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
+  margin-bottom: 2em;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-auto-rows: repeat(2, 1fr);
 }
+
 
 .gallery-image{
   width: 90%;
